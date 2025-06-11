@@ -71,13 +71,13 @@ function updateXPDisplay() {
 }
 
 function saveProgress() {
-  localStorage.setItem("events_xp", xp);
-  localStorage.setItem("events_level", level);
+  localStorage.setItem("buildings_xp", xp);
+  localStorage.setItem("buildings_level", level);
 }
 
 function loadProgress() {
-  const savedXP = localStorage.getItem("events_xp");
-  const savedLevel = localStorage.getItem("events_level");
+  const savedXP = localStorage.getItem("buildings_xp");
+  const savedLevel = localStorage.getItem("buildings_level");
   if (savedXP !== null) xp = parseInt(savedXP, 10);
   if (savedLevel !== null) level = parseInt(savedLevel, 10);
   updateScoreAndStreakDisplay();
